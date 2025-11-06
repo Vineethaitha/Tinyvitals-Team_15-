@@ -6,7 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1B9A78412EBBD18000B8533E /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A78402EBBD18000B8533E /* OnboardingModel.swift */; };
+		1B9A78432EBBD1B800B8533E /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A78422EBBD1B800B8533E /* OnboardingViewController.xib */; };
+		1B9A78452EBBDC9C00B8533E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A78442EBBDC9C00B8533E /* OnboardingViewController.swift */; };
+		1B9A78E02EBC520F00B8533E /* Sigmar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A78DF2EBC520F00B8533E /* Sigmar-Regular.ttf */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		1B9A78402EBBD18000B8533E /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		1B9A78422EBBD1B800B8533E /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		1B9A78442EBBDC9C00B8533E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1B9A78DF2EBC520F00B8533E /* Sigmar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sigmar-Regular.ttf"; sourceTree = "<group>"; };
 		3B9CFF7B2EB8E17600D44C05 /* Tinyvitals(Team_15).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinyvitals(Team_15).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -42,9 +53,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B9A783B2EBBD0E100B8533E /* features */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A783C2EBBD0F600B8533E /* onboarding */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		1B9A783C2EBBD0F600B8533E /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A78DC2EBC512E00B8533E /* Font */,
+				1B9A783F2EBBD11800B8533E /* controller */,
+				1B9A783E2EBBD11300B8533E /* view */,
+				1B9A783D2EBBD10C00B8533E /* model */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		1B9A783D2EBBD10C00B8533E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A78402EBBD18000B8533E /* OnboardingModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1B9A783E2EBBD11300B8533E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A78422EBBD1B800B8533E /* OnboardingViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1B9A783F2EBBD11800B8533E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A78442EBBDC9C00B8533E /* OnboardingViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		1B9A78DC2EBC512E00B8533E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A78DF2EBC520F00B8533E /* Sigmar-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		3B9CFF722EB8E17600D44C05 = {
 			isa = PBXGroup;
 			children = (
+				1B9A783B2EBBD0E100B8533E /* features */,
 				3B9CFF7D2EB8E17600D44C05 /* Tinyvitals(Team_15) */,
 				3B9CFF7C2EB8E17600D44C05 /* Products */,
 			);
@@ -122,6 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9A78432EBBD1B800B8533E /* OnboardingViewController.xib in Resources */,
+				1B9A78E02EBC520F00B8533E /* Sigmar-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9A78412EBBD18000B8533E /* OnboardingModel.swift in Sources */,
+				1B9A78452EBBDC9C00B8533E /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
