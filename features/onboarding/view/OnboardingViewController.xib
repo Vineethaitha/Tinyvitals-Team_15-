@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Tinyvitals_Team_15_" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="ZkJ-HT-tl0" id="6mD-7N-Cgk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="3VY-zc-q74"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OnboardingView">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVx-xY-aEk">
+                    <rect key="frame" x="24" y="153" width="345" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HHK-HS-5FS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TinyVitals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wB-St-gS0">
+                    <rect key="frame" x="20" y="188" width="353" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="ger-ou-tci"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="52"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="INn-uv-SVR">
+                    <rect key="frame" x="10" y="278" width="373" height="306"/>
+                    <color key="backgroundColor" red="0.64313725489999995" green="0.79607843140000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkJ-HT-tl0">
+                    <rect key="frame" x="30" y="684" width="333" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="UIB-a3-967"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Continue"/>
+                    <connections>
+                        <action selector="continueButton:" destination="-1" eventType="touchUpInside" id="DZN-jO-9Ud"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.41176470588235292" green="0.58823529411764708" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2wB-St-gS0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="1eA-Mx-qM8"/>
+                <constraint firstItem="INn-uv-SVR" firstAttribute="top" secondItem="2wB-St-gS0" secondAttribute="bottom" constant="10" id="87D-Yg-pba"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZkJ-HT-tl0" secondAttribute="trailing" constant="30" id="E3a-4h-OcM"/>
+                <constraint firstItem="wVx-xY-aEk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="EWe-tH-rPY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2wB-St-gS0" secondAttribute="trailing" constant="20" id="LYc-mp-pYA"/>
+                <constraint firstItem="wVx-xY-aEk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="PZO-iB-id4"/>
+                <constraint firstItem="ZkJ-HT-tl0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="Z8o-4T-qLi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wVx-xY-aEk" secondAttribute="trailing" constant="24" id="aIX-1O-Ycy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="INn-uv-SVR" secondAttribute="bottom" constant="200" id="iJu-TS-27U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="INn-uv-SVR" secondAttribute="trailing" constant="10" id="p6L-oN-6bJ"/>
+                <constraint firstItem="INn-uv-SVR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="qov-vo-ooK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZkJ-HT-tl0" secondAttribute="bottom" constant="50" id="xku-eq-Iky"/>
+                <constraint firstItem="2wB-St-gS0" firstAttribute="top" secondItem="wVx-xY-aEk" secondAttribute="bottom" constant="5" id="ylL-lG-1D5"/>
+            </constraints>
+            <point key="canvasLocation" x="101.5267175572519" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>
