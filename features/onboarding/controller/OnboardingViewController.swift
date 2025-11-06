@@ -9,21 +9,22 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
 
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var stackContainer: UIStackView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // style button
+        continueButton.layer.cornerRadius = 20
+        continueButton.layer.masksToBounds = true
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func continueButton(_ sender: Any) {
+        // present Login screen
     }
-    */
 
+    // Helper to init from XIB if needed
+    static func fromNib() -> OnboardingViewController {
+        return OnboardingViewController(nibName: "OnboardingViewController", bundle: nil)
+    }
 }

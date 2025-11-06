@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct OnboardingPage {
+    let title: String
+    let subtitle: String
+    let iconName: String
+}
