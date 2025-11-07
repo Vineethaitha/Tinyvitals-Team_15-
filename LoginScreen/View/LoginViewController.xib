@@ -31,11 +31,11 @@
                             <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKO-2e-2SI">
-                                    <rect key="frame" x="0.0" y="14.666666666666657" width="40.666666666666664" height="21"/>
+                                    <rect key="frame" x="0.0" y="14.666666666666657" width="40" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="K7v-eB-MMM"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -58,10 +58,10 @@
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                            <real key="value" value="1.2"/>
+                                            <integer key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="12"/>
+                                            <integer key="value" value="10"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
@@ -76,11 +76,11 @@
                             <rect key="frame" x="0.0" y="100" width="343" height="50"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88A-MB-Q22">
-                                    <rect key="frame" x="0.0" y="14.666666666666686" width="73.333333333333329" height="21"/>
+                                    <rect key="frame" x="0.0" y="14.666666666666686" width="72.666666666666671" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="1Xe-Am-QxC"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -102,10 +102,10 @@
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                            <real key="value" value="1.2"/>
+                                            <integer key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="12"/>
+                                            <integer key="value" value="10"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
